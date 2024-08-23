@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+#about, #objctifs{
+  background-color: #2b2f4b;
+  padding: 40px;
+  margin-top: -50px; 
+}
+
+#about .header, #objctifs .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#about .header h1, #objctifs .header h1{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#about .header a, #objctifs .header a{
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#about .header a:hover, #objctifs .header a:hover{
+  border-color: #fff;
+  box-shadow: none;
+}
+
+#about .card, #objctifs .card{
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+  /* border: 1px solid red; */
+}
+
+#about .card:hover, #objctifs .card:hover{
+  border-color: #FFB742;
+  box-shadow: none;
+}
+
+#about .card img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#about .card .info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#about .card .info h1, #objctifs .card .info h1{
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: 'Ubuntu';
+}
+
+#about .card .info p, #objctifs .card .info  p{
+  color: #ccc;
+  font-size: 13px;
+  line-height: 1.8rem;
+}
+
+#objctifs .objectif-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#objctifs .objectif-card .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 350px;
+}
+
+#objctifs .objectif-card .card .info i{
+  color: #fff;
+  font-size: 8rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+#objctifs .objectif-card .card .info h1{
+  text-align: center;
+}
+

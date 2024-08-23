@@ -1,0 +1,98 @@
+
+body {
+  /* background-color: #333; */
+  background-color: #2b2f4b;
+  color: #000;
+}
+
+
+body.dark-mode {
+  background-color: #fff;
+  color: #fff;
+}
+
+/* Ajoutez des styles pour l'interrupteur */
+.toggle-container {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-container label:after {
+  content: '\2600'; /* Icône de soleil Unicode */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  /* transform: translate(-50%, -50%); */
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-container input:checked + label {
+  background-color: #2196F3; /* couleur d'accentuation pour le mode sombre */
+  top: 0px;
+  right: 5px;
+}
+
+.toggle-container input:checked + label:after {
+  transform: translateX(16px);
+}
+
+.toggle-container input:checked + label:after {
+  transform: translateX(16px);
+  content: '\1F319'; /* Icône de lune Unicode */
+  /* margin-bottom: 3px; */
+
+}
+
+
+
+
+.scroll-top{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2b2f4b;
+  color: #fff;
+  border: 1px solid #FFB742;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 16px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.scroll-top:hover{
+  border-color: #fff;
+  box-shadow: none;
+}

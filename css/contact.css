@@ -1,0 +1,94 @@
+
+#contacts, #features{
+  background-color: #2b2f4b;
+  padding: 40px;
+}
+
+#contacts .header, #features .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+
+#contacts .header a, #features .header a{
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#contacts .header a:hover, #features .header a:hover{
+  border-color: #fff;
+  box-shadow: none;
+}
+
+#contacts .carte, #features .carte{
+  padding: 30px;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); */
+  box-shadow: 0 1px 10px white;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#contacts .carte:hover, #features .carte:hover{
+  border-color: #fff;
+  box-shadow: none;
+}
+
+#contacts .carte >img{
+  width: 160px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+#contacts .carte .infoma{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* border: 1px solid red; */
+width: 100%;
+}
+
+#contacts .carte .infoma h1{
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Ubuntu';
+}
+
+#contacts .carte .infoma p{
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+#contacts .carte .infoma p i{
+font-size: 30px;
+margin-right: 10px;
+}
+
+.contacts{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.contacts p a{
+  color: #ccc;
+  text-decoration: underline;
+  margin-left: 5px;
+}
